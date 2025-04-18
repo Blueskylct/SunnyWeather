@@ -8,11 +8,11 @@ import com.google.gson.Gson
 
 object PlaceDao {
     fun savePlace(place: Place){
-        sharedPreferences().edit {
+        sharedPreferences().edit{
             putString("place", Gson().toJson(place))
         }
     }
-
+  
     fun getSavedPlace(): Place{
         val placeJson = sharedPreferences().getString("place","")
         return Gson().fromJson(placeJson,Place::class.java)

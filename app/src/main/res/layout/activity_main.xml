@@ -9,6 +9,7 @@
         android:name="com.blueskylct.sunnyweather.ui.place.PlaceFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_place" />
+        tools:layout="@layout/fragment_place"
+        tools:ignore="FragmentTagUsage" />
 
 </FrameLayout>
